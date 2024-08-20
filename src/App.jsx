@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Chat from "./components/chat/Chat";
 import Detail from "./components/detail/Detail";
-import List from "./components/list/list";
+import List from "./components/list/List";
 import Login from "./components/login/Login";
 import Signup from "./components/signup/Signup";
 import Notification from "./components/notification/Notification";

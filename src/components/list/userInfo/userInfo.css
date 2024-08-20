@@ -1,0 +1,41 @@
+.userInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  .list-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    img {
+      width: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .avatar-first-litter {
+      width: 50px;
+      height: 50px;
+      border-radius: 30%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(14, 25, 40, 0.3);
+    }
+    .name {
+      font-size: 14px;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+  }
+}
+.icons {
+  display: flex;
+  gap: 20px;
+  img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}

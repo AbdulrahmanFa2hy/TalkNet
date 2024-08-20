@@ -1,0 +1,83 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 350px;
+  padding: 20px;
+  margin: auto;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  label {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  input {
+    width: 100%;
+    background-color: rgba(17, 25, 40, 0.5);
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: #5183fe;
+    cursor: pointer;
+    color: white;
+    border: none;
+    &:active {
+      transform: scale(0.9);
+    }
+    &.google-btn {
+      background-color: transparent;
+      border: 1px solid #ddd;
+    }
+    img {
+      width: 20px;
+      border-radius: 50%;
+    }
+  }
+  p {
+    margin: -10px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: "";
+      background-color: #5183fe;
+      position: absolute;
+      width: 0;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
